@@ -103,3 +103,75 @@ section {
 .dark #intro-video {
   background: #1e1e1e;
 }
+
+.video-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  width: 80%;
+  max-width: 700px;
+  aspect-ratio: 16/9;
+}
+
+.popup-content iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.close-btn {
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  float: right;
+}
+
+/* ===== CERTIFICATIONS ===== */
+
+#certifications {
+  text-align: center;
+}
+
+.cert-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cert-card {
+  background: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cert-card h3 {
+  margin-bottom: 10px;
+}
+
+.cert-card a {
+  text-decoration: none;
+  color: #00adb5;
+  font-weight: bold;
+}
+.dark .cert-card {
+  background: #2a2a2a;
+}
+@media (max-width: 768px) {
+  .cert-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
