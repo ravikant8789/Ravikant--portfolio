@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <nav>
-  <h2>Rohan</h2>
+  <h2>Ravikant kumar</h2>
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -17,12 +18,33 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <button onclick="toggleDarkMode()" class="dark-btn">
+  🌙 Dark Mode
+</button>
+
 </nav>
 
 <section id="home">
   <h1>Hi, I'm Ravikant kumar</h1>
   <p>CSE Student | Aspiring AI Cybersecurity Engineer</p>
+  <a href="assets/resume.pdf" download class="btn">
+  Download Resume
+</a>
+
 </section>
+<section id="intro-video">
+  <h2>Intro Video</h2>
+
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/WBC3drwprr4"
+      title="Intro Video"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
 
 <section id="about">
   <h2>About Me</h2>
@@ -39,12 +61,40 @@
 
 <section id="projects">
   <h2>Projects</h2>
-  <p>Projects coming soon...</p>
+
+  <div class="projects-container">
+
+    <div class="project-card">
+      <h3>Password Strength Checker</h3>
+      <p>
+        A web tool that checks password strength based on length,
+        symbols, numbers, and uppercase characters.
+      </p>
+      <p><b>Tech:</b> HTML, CSS, JavaScript</p>
+      <a href="https://github.com/yourusername/password-checker" target="_blank">
+        View on GitHub
+      </a>
+    </div>
+
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>
+        My personal portfolio website to showcase projects,
+        skills, and resume.
+      </p>
+      <p><b>Tech:</b> HTML, CSS, JavaScript</p>
+      <a href="https://github.com/yourusername/portfolio" target="_blank">
+        View on GitHub
+      </a>
+    </div>
+
+  </div>
 </section>
+
 
 <section id="contact">
   <h2>Contact</h2>
-  <p>Email: your@email.com</p>
+  <p>Email: Raviyadav877389@email.com</p>
 </section>
 
 <script src="script.js"></script>
