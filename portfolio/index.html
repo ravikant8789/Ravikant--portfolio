@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ravikant Kumar | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Ravikant Kumar — AI & Cybersecurity enthusiast.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="insane-bg" aria-hidden="true">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="blob blob3"></div>
+  <div class="grain"></div>
+  <div class="cursor-glow"></div>
+  <canvas id="particles"></canvas>
+</div>
+
+<nav class="nav" id="nav">
+  <a href="#home" class="logo">Ravikant<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button id="theme-toggle" onclick="toggleTheme()" class="theme-btn" aria-label="Toggle theme">
+    <i class="fas fa-moon" id="theme-icon"></i>
+    <span id="theme-label">Dark</span>
+  </button>
+</nav>
+
+<section id="home" class="hero reveal">
+  <div class="hero-container">
+    <div class="hero-text">
+      <p class="eyebrow">Portfolio · 2026</p>
+      <h1>Hi, I'm <span class="gradient-text">Ravikant Kumar</span></h1>
+      <h2 id="typing" class="typing-line"></h2>
+      <p class="hero-tagline">AI & Cybersecurity enthusiast crafting secure, intelligent systems.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-image-ring"></div>
+      <img src="assets/Profile.png" alt="Ravikant Kumar">
+    </div>
+  </div>
+</section>
+
+<section id="about" class="panel reveal">
+  <p class="section-label">About</p>
+  <h2>Building at the intersection of security & intelligence</h2>
+  <p class="section-lead">I am an IT student focused on AI, machine learning, and cybersecurity — driven to design systems that are both powerful and trustworthy.</p>
+</section>
+
+<section id="skills" class="panel reveal">
+  <p class="section-label">Expertise</p>
+  <h2>Skills & tools</h2>
+  <ul class="skill-tags">
+    <li>C++</li>
+    <li>Python</li>
+    <li>DSA</li>
+    <li>Cybersecurity</li>
+    <li>Linux</li>
+    <li>Machine Learning</li>
+  </ul>
+</section>
+
+<section id="projects" class="panel reveal">
+  <p class="section-label">Work</p>
+  <h2>Selected projects</h2>
+  <div class="card-grid">
+    <article class="card">
+      <span class="card-tag">AI · ML · Streamlit</span>
+      <h3>AI Attendance App (SnapClass)</h3>
+      <p>Streamlit app for faster attendance using AI — separate teacher and student flows with auto-enroll via join codes.</p>
+      <a href="https://github.com/ravikant8789/AI-ML-project/tree/46e28198df20fc2c90ca3708553b9f03d981c68e/ai-attendance-project-app-main" target="_blank" rel="noopener noreferrer" class="card-link">
+        View on GitHub <i class="fas fa-arrow-up-right-from-square"></i>
+      </a>
+    </article>
+    <article class="card">
+      <span class="card-tag">Web · Design</span>
+      <h3>Portfolio Website</h3>
+      <p>A modern, responsive portfolio showcasing projects and certifications.</p>
+      <a href="https://github.com/ravikant8789/Ravikant--portfolio" target="_blank" rel="noopener noreferrer" class="card-link">
+        View on GitHub <i class="fas fa-arrow-up-right-from-square"></i>
+      </a>
+    </article>
+  </div>
+</section>
+
+<section id="certifications" class="panel reveal">
+  <p class="section-label">Credentials</p>
+  <h2>Certifications</h2>
+  <div class="card-grid">
+    <article class="card">
+      <span class="card-tag">Google · Coursera</span>
+      <h3>Google Cybersecurity Professional Certificate</h3>
+      <a href="https://www.coursera.org/account/accomplishments/professional-cert/2380NFZOXUYT" target="_blank" rel="noopener noreferrer" class="card-link">
+        View certificate <i class="fas fa-arrow-up-right-from-square"></i>
+      </a>
+    </article>
+    <article class="card">
+      <span class="card-tag">AI · Apna College</span>
+      <h3>Introduction to Artificial Intelligence</h3>
+      <a href="https://www.apnacollege.in/" target="_blank" rel="noopener noreferrer" class="card-link">
+        View certificate <i class="fas fa-arrow-up-right-from-square"></i>
+      </a>
+    </article>
+  </div>
+</section>
+
+<section id="contact" class="panel reveal">
+  <p class="section-label">Connect</p>
+  <h2>Let's work together</h2>
+  <p class="section-lead contact-lead">Reach out for collaborations, opportunities, or a conversation about tech.</p>
+  <div class="contact-icons">
+    <a id="email-link" data-email="rohanram0222@gmail.com" href="mailto:rohanram0222@gmail.com?subject=Contact%20from%20Portfolio&amp;body=Hello%2C%0A%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20connect." aria-label="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="tel:+917367932257" aria-label="Phone">
+      <i class="fas fa-phone"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/ravikant-kumar-5306b43a2/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+    <a href="https://github.com/ravikant8789" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> Ravikant Kumar. Crafted with care.</p>
+</footer>
+
+<a href="https://wa.me/917367932257" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
